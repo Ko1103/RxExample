@@ -21,6 +21,8 @@
 		E65E2D2020F0E26D00EB134B /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D1F20F0E26C00EB134B /* Badge.swift */; };
 		E65E2D2220F0E35400EB134B /* BadgeSelectorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2120F0E35400EB134B /* BadgeSelectorWireframe.swift */; };
 		E65E2D2420F14B2300EB134B /* SelectedBadgesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2320F14B2300EB134B /* SelectedBadgesViewModel.swift */; };
+		E65E2D2C20F883B900EB134B /* BadgeSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2B20F883B900EB134B /* BadgeSelectorViewModel.swift */; };
+		E65E2D2E20F8853500EB134B /* SelectableBadgesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2D20F8853500EB134B /* SelectableBadgesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		E65E2D1F20F0E26C00EB134B /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		E65E2D2120F0E35400EB134B /* BadgeSelectorWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSelectorWireframe.swift; sourceTree = "<group>"; };
 		E65E2D2320F14B2300EB134B /* SelectedBadgesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBadgesViewModel.swift; sourceTree = "<group>"; };
+		E65E2D2B20F883B900EB134B /* BadgeSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSelectorViewModel.swift; sourceTree = "<group>"; };
+		E65E2D2D20F8853500EB134B /* SelectableBadgesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableBadgesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				E65E2D1D20F0AFF100EB134B /* BadgeSelectorCompleionViewModel.swift */,
+				E65E2D2B20F883B900EB134B /* BadgeSelectorViewModel.swift */,
 				E65E2D2320F14B2300EB134B /* SelectedBadgesViewModel.swift */,
+				E65E2D2D20F8853500EB134B /* SelectableBadgesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -399,11 +405,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65E2D2E20F8853500EB134B /* SelectableBadgesViewModel.swift in Sources */,
 				E65E2CF120F0ADAB00EB134B /* ViewController.swift in Sources */,
 				E65E2D2020F0E26D00EB134B /* Badge.swift in Sources */,
 				E65E2D1E20F0AFF100EB134B /* BadgeSelectorCompleionViewModel.swift in Sources */,
 				E65E2D2420F14B2300EB134B /* SelectedBadgesViewModel.swift in Sources */,
 				E65E2D2220F0E35400EB134B /* BadgeSelectorWireframe.swift in Sources */,
+				E65E2D2C20F883B900EB134B /* BadgeSelectorViewModel.swift in Sources */,
 				E65E2CEF20F0ADAB00EB134B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
