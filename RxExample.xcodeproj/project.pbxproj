@@ -17,6 +17,12 @@
 		E65E2CF920F0ADAC00EB134B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65E2CF720F0ADAC00EB134B /* LaunchScreen.storyboard */; };
 		E65E2D0420F0ADAC00EB134B /* RxExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D0320F0ADAC00EB134B /* RxExampleTests.swift */; };
 		E65E2D0F20F0ADAC00EB134B /* RxExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D0E20F0ADAC00EB134B /* RxExampleUITests.swift */; };
+		E65E2D1E20F0AFF100EB134B /* BadgeSelectorCompleionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D1D20F0AFF100EB134B /* BadgeSelectorCompleionViewModel.swift */; };
+		E65E2D2020F0E26D00EB134B /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D1F20F0E26C00EB134B /* Badge.swift */; };
+		E65E2D2220F0E35400EB134B /* BadgeSelectorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2120F0E35400EB134B /* BadgeSelectorWireframe.swift */; };
+		E65E2D2420F14B2300EB134B /* SelectedBadgesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2320F14B2300EB134B /* SelectedBadgesViewModel.swift */; };
+		E65E2D2C20F883B900EB134B /* BadgeSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2B20F883B900EB134B /* BadgeSelectorViewModel.swift */; };
+		E65E2D2E20F8853500EB134B /* SelectableBadgesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E2D2D20F8853500EB134B /* SelectableBadgesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		E65E2D0A20F0ADAC00EB134B /* RxExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65E2D0E20F0ADAC00EB134B /* RxExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExampleUITests.swift; sourceTree = "<group>"; };
 		E65E2D1020F0ADAC00EB134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65E2D1D20F0AFF100EB134B /* BadgeSelectorCompleionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSelectorCompleionViewModel.swift; sourceTree = "<group>"; };
+		E65E2D1F20F0E26C00EB134B /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		E65E2D2120F0E35400EB134B /* BadgeSelectorWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSelectorWireframe.swift; sourceTree = "<group>"; };
+		E65E2D2320F14B2300EB134B /* SelectedBadgesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBadgesViewModel.swift; sourceTree = "<group>"; };
+		E65E2D2B20F883B900EB134B /* BadgeSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSelectorViewModel.swift; sourceTree = "<group>"; };
+		E65E2D2D20F8853500EB134B /* SelectableBadgesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableBadgesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +149,15 @@
 		E65E2CED20F0ADAB00EB134B /* RxExample */ = {
 			isa = PBXGroup;
 			children = (
+				E65E2D1C20F0AFCD00EB134B /* ViewModel */,
 				E65E2CEE20F0ADAB00EB134B /* AppDelegate.swift */,
 				E65E2CF020F0ADAB00EB134B /* ViewController.swift */,
 				E65E2CF220F0ADAB00EB134B /* Main.storyboard */,
 				E65E2CF520F0ADAC00EB134B /* Assets.xcassets */,
 				E65E2CF720F0ADAC00EB134B /* LaunchScreen.storyboard */,
 				E65E2CFA20F0ADAC00EB134B /* Info.plist */,
+				E65E2D1F20F0E26C00EB134B /* Badge.swift */,
+				E65E2D2120F0E35400EB134B /* BadgeSelectorWireframe.swift */,
 			);
 			path = RxExample;
 			sourceTree = "<group>";
@@ -163,6 +178,17 @@
 				E65E2D1020F0ADAC00EB134B /* Info.plist */,
 			);
 			path = RxExampleUITests;
+			sourceTree = "<group>";
+		};
+		E65E2D1C20F0AFCD00EB134B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E65E2D1D20F0AFF100EB134B /* BadgeSelectorCompleionViewModel.swift */,
+				E65E2D2B20F883B900EB134B /* BadgeSelectorViewModel.swift */,
+				E65E2D2320F14B2300EB134B /* SelectedBadgesViewModel.swift */,
+				E65E2D2D20F8853500EB134B /* SelectableBadgesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,10 +383,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxExample/Pods-RxExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,7 +405,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65E2D2E20F8853500EB134B /* SelectableBadgesViewModel.swift in Sources */,
 				E65E2CF120F0ADAB00EB134B /* ViewController.swift in Sources */,
+				E65E2D2020F0E26D00EB134B /* Badge.swift in Sources */,
+				E65E2D1E20F0AFF100EB134B /* BadgeSelectorCompleionViewModel.swift in Sources */,
+				E65E2D2420F14B2300EB134B /* SelectedBadgesViewModel.swift in Sources */,
+				E65E2D2220F0E35400EB134B /* BadgeSelectorWireframe.swift in Sources */,
+				E65E2D2C20F883B900EB134B /* BadgeSelectorViewModel.swift in Sources */,
 				E65E2CEF20F0ADAB00EB134B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
